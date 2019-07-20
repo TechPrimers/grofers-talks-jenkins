@@ -1,0 +1,6 @@
+applications:
+  - path: ./target/grofers-talks-jenkins-0.0.1-SNAPSHOT.jar
+    memory: 1G
+    instances: 1
+    name: grofers-talks-jenkins
+    host: grofers-talks-jenkins
