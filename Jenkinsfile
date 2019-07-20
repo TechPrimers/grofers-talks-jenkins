@@ -18,6 +18,12 @@ pipeline {
             }
         }
 
+        stage ('Deploy?') {
+                    steps {
+                        input('Do you want to deploy?')
+                    }
+                }
+
         stage ('Deployment Stage') {
             steps {
 		            withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'PCF_LOGIN',
